@@ -16,7 +16,7 @@ int  main(int  argc, char *argv[]) {
 		pid_t  pid;
 		int* bankAccount;
 		int* turn;
-	
+
 		ShmID = shmget(IPC_PRIVATE, 2*sizeof(int), IPC_CREAT | 0666);
 		if (ShmID < 0) {
 			printf("*** shmget error ***\n");
@@ -25,6 +25,7 @@ int  main(int  argc, char *argv[]) {
 		printf("Process has recieved shared memory of 2 integers...\n");
 
 		ShmPTR = (int *) shmat(ShmID, NULL, 0);
+
 		if (*ShmPTR == -1) {
 			printf("*** shmat error (server) ***\n");
 			exit(1);
