@@ -2,9 +2,9 @@
 
 ## Communication between Parent and Child Process via Shared Memory
 The program in bank.c creates two shared variables of type int: BankAccount, and
-Turn. Your program must create two processes, one parent process and one child
-process, and allow the parent to deposit (i.e. add) money to the BankAccount, 
-and also allow the child process to withdraw (i.e. subtract) money from the 
+Turn. This program creates two processes, one parent process and one child
+process, and allows the parent to deposit (i.e. add) money to the BankAccount, 
+and also allows the child process to withdraw (i.e. subtract) money from the 
 BankAccount using Tanenbaum’s strict alternation. Both the Parent and Child 
 loop 25 times and follow the rules each time through the loop.
 
