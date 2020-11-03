@@ -70,7 +70,7 @@ int  main(int  argc, char *argv[]) {
 			int loops = 0;
 
 			while (loops < 25) {
-				int randSleep = (rand() % 1);
+				int randSleep = (rand() % 5);
 				sleep(randSleep);
 				while (*turn == 1);
 				request(bankAccount); // critical section
